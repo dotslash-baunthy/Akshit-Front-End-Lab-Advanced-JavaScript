@@ -59,7 +59,7 @@ function getResult(cityName) {
             }
             else {
                 mapResponse(null);
-                alert("City not found. Enter a valid city name.");
+                setTimeout(() => alert("City not found. Enter a valid city name."), 100);
             }
         })
         .then((responseBody) => {
